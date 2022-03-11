@@ -3,23 +3,64 @@
 :root {
   --vert: #00ab2e;
   --rouge: #e6002c;
-  --blanc: #fbf7f0;
+  --blanc: #fdf1dc;
 }
 html {
   height:100%;
 }
 body {
   height: 100%;
+  background-color: var(--blanc);
 }
 
 header {
   height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header img {
+  width:50%;
+  height: auto;
+}
+
+.header__wrap {
+  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+.header__slogan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.header__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
 section {
+  height: 100%;
   background-color: var(--blanc);
+}
+
+.produits__presentation {
+  height: 40%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.produits__wrap {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
