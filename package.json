@@ -1,0 +1,26 @@
+{
+  "name": "panzani",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ptiimouss/panzani-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ptiimouss/panzani-project/issues"
+  },
+  "homepage": "https://github.com/Ptiimouss/panzani-project#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.3.2",
+    "parcel": "^2.3.2"
+  }
+}

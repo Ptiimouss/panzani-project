@@ -5,7 +5,21 @@
   --rouge: #e6002c;
   --blanc: #fbf7f0;
 }
+html {
+  height:100%;
+}
+body {
+  height: 100%;
+}
+
+header {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 section {
-  background-color: red;
+  background-color: var(--blanc);
 }
