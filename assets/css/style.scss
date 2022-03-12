@@ -1,9 +1,9 @@
 @import url(reset.scss);
 @import url(header.scss);
 @import url(produits.scss);
-// @import url(burger.scss);
-// @import url(conseils.scss);
-// @import url(engagements.scss);
+@import url(burger.scss);
+@import url(conseils.scss);
+@import url(engagements.scss);
 
 @font-face {
   font-family: "creamy";
@@ -12,7 +12,7 @@
 
 @font-face {
   font-family: "orgon";
-  src: url("./../fonts/orgon-regular.otf") format("otf");
+  src: url("./../fonts/orgon.woff2") format("woff2");
 }
 
 @mixin m {
@@ -42,11 +42,21 @@ html {
 body {
   height: 100%;
   background-color: var(--blanc);
+  font-family: "orgon";
 }
 
 .barre {
+  margin-top: 10px;
   width: 3.125rem;
-  height: .3125rem;
+  height: .5rem;
+  background: var(--rouge);
+  border-radius: 6px;
+}
+
+.barre2 {
+  margin-top: 10px;
+  width: 3.125rem;
+  height: .5rem;
   background: var(--rouge);
   border-radius: 6px;
 }
