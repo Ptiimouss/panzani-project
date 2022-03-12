@@ -1,0 +1,42 @@
+header {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: "creamy";
+}
+
+header img {
+  width:80%;
+  height: auto;
+}
+
+.header__wrap {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__slogan {
+  height: 70%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  padding: 7,5rem 0 10rem 0;
+}
+
+.header__description {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 3rem;
+}
