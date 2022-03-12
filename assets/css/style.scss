@@ -45,18 +45,43 @@ body {
   font-family: "orgon";
 }
 
-.barre {
-  margin-top: 10px;
+.barregauche__courte {
+  margin: 10px 0;
   width: 3.125rem;
-  height: .5rem;
+  height: .1875rem;
   background: var(--rouge);
-  border-radius: 6px;
+  border-radius: 10px;
 }
 
-.barre2 {
-  margin-top: 10px;
+.barredroite__courte {
+  position: absolute;
+  right: 5%;
+  margin: 10px 0;
   width: 3.125rem;
+  height: .1875rem;
+  background: var(--rouge);
+  border-radius: 10px;
+}
+
+.barredroite__longue {
+  position: absolute;
+  right: 5%;
+  margin-top: 10px;
+  width: 6.25rem;
   height: .5rem;
   background: var(--rouge);
-  border-radius: 6px;
+  border-radius: 10px;
+}
+
+.barregauche__longue {
+  margin-top: 10px;
+  width: 6.25rem;
+  height: .5rem;
+  background: var(--rouge);
+  border-radius: 10px;
+}
+
+.barre__spacing {
+  width: 100%;
+  height:20px;
 }
