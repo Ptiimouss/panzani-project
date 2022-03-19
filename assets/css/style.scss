@@ -48,7 +48,7 @@ body {
 .barregauche__courte {
   margin: 10px 0;
   width: 3.125rem;
-  height: .1875rem;
+  height: .25rem;
   background: var(--rouge);
   border-radius: 10px;
 }
@@ -58,7 +58,7 @@ body {
   right: 5%;
   margin: 10px 0;
   width: 3.125rem;
-  height: .1875rem;
+  height: .25rem;
   background: var(--rouge);
   border-radius: 10px;
 }
@@ -84,4 +84,17 @@ body {
 .barre__spacing {
   width: 100%;
   height:20px;
+}
+
+.coin {
+  margin-top: 10px;
+  width: 6.25rem;
+  height: .5rem;
+  background: var(--blanc);
+  border-radius: 10px;
+}
+
+.transition__gradient {
+  background: linear-gradient(0deg, var(--vert), var(--blanc));
+  height: 300px;
 }
