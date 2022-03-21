@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Depuis toujours, nous sélectionnons les meilleurs ingrédients pour vous offrir des moments de plaisir et de convivialité : des pâtes oui, mais des Panzani !">
   <link rel="shortcut icon" href="assets/img/panzani.ico"/>
   <link rel="stylesheet" href="assets/css/style.scss">
   <script defer src="https://kit.fontawesome.com/86360e1160.js" crossorigin="anonymous"></script>
@@ -11,20 +12,12 @@
   <title>Panzani</title>
 </head>
 <body>
-  <a href="#" id="back-to-top-btn">up</a>
-  <!-- <nav>
-    <ul>
-      <li><a href="#">Produits</a></li>
-      <li><a href="#">Réductions</a></li>
-      <li><a href="#">Engagements</a></li>
-      <li><a href="#">Recettes</a></li>
-    </ul>
-  </nav> --> 
+  <button id="back-to-top-btn"><p>l</p><i class="fa-solid fa-angle-up"></i></button>
   <header class="header">
     <div class="header__wrap">
       <div class="header__slogan">
         <h1>Des pâtes oui, mais des Panzanis</h1>
-        <img src="./assets/img/panzani.png" alt="Logo" loading="lazy">
+        <img src="./assets/img/panzani.webp" alt="Logo">
       </div>
       <div class="header__description">
         <h2>PANZANI à tout moment</h2>
@@ -47,7 +40,10 @@
           <p>Tagliatelles, spaghetti, torsades, coquillettes, papillons… quelle que soit leur forme ou leur couleur, on a tous une petite histoire avec des pâtes oui, mais des Panzani, forcément !</p>
           <a href="#">Découvrir nos pâtes</a>
         </div>
-          <img src="./assets/img/patesproduit.png" alt="Pâtes" loading="lazy">
+        <picture>
+          <source media="(min-width: 850px)" srcset="./assets/img/patesproduit_large.webp">
+          <img src="./assets/img/patesproduit.webp" alt="Pâtes" loading="lazy">
+        </picture>
       </div>
       <div class="produits__item">
         <div class="produits__description">
@@ -59,7 +55,10 @@
           <p>Il suffit d’une noisette de beurre pour commencer à se régaler. Maintenant, à vous de sublimer vos pâtes en y ajoutant toutes les sauces que vous aimez selon vos envies.</p>
           <a href="#">Découvrir nos sauces</a>
         </div>
-        <img src="./assets/img/sauces.png" alt="Sauces" loading="lazy">
+        <picture>
+          <source media="(min-width: 850px)" srcset="./assets/img/sauces_large.webp">
+          <img src="./assets/img/sauces.webp" alt="Sauces" loading="lazy">
+        </picture>
       </div>
       <div class="produits__item">
         <div class="produits__description">
@@ -69,7 +68,7 @@
           <p>Gaspachos, pizzas, lasagnes, gratins… la base pour réussir son plat, c’est d’avoir la bonne base. C’est justement pour vous permettre de créer selon vos envies que nous avons imaginé toute une gamme de bases qualité Panzani.</p>
           <a href="#">Découvrir nos bases</a>
         </div>
-        <img src="./assets/img/bases.png" alt="Bases" loading="lazy">
+        <img src="./assets/img/bases.webp" alt="Bases" loading="lazy">
       </div>
       <div class="produits__item">
         <div class="produits__description">
@@ -81,7 +80,7 @@
           <p>Parce qu’il n’y a pas que les pâtes dans la vie, nous vous accompagnons aussi dans vos envies de desserts gourmands et de recettes orientales savoureuses. Finalement la seule limite, c’est votre imagination.</p>
           <a href="#">Découvrir nos semoules</a>
         </div>
-        <img src="./assets/img/semoule.png" alt="Semoule" loading="lazy">
+        <img src="./assets/img/semoule.webp" alt="Semoule" loading="lazy">
       </div>
     </div>
   </section>
@@ -90,30 +89,28 @@
     <h2>Nos conseils</h2>
     <div class="conseils__wrap">
       <div class="conseils__item">
-        <a href="#"><img src="./assets/img/plat1_small.png" alt="Plat" loading="lazy"></a>
-          <div class="conseils__text">Comment donner facilement du goût à ses pâtes ?</div>
-          <!-- <p>Des recettes on en connait un paquet mais parfois il suffit de quelques gestes simples pour aromatiser ses pâtes sans se compliquer la vie.</p> -->
+        <a href="#">
+            <img src="./assets/img/plat1_small.webp" alt="Plat" loading="lazy">
+        </a>
+        <div class="conseils__text">Comment donner facilement du goût à ses pâtes ?</div>
       </div>
       <div class="conseils__item">
         <a href="#">
           <picture>
-            <source media="(min-width: 440px)" srcset="./assets/img/plat2_medium.jpg">
-            <source media="(min-width: 970px)" srcset="./assets/img/plat2.jpg">
-            <img src="./assets/img/plat2_small.jpg" alt="Cuisinière" loading="lazy">
+            <source media="(min-width: 440px)" srcset="./assets/img/plat2_medium.webp">
+            <img src="./assets/img/plat2_small.webp" alt="Cuisinière" loading="lazy">
           </picture>
         </a>
         <div class="conseils__text">Quelle sauce et quel vin pour accompagner vos pâtes ?</div>
-        <!-- <p>En bon gastronome et hôte émérite, vous mettez un point d’honneur à choisir avec soin la sauce de vos pâtes et la boisson qui les accompagne. J’enfile mon tablier de sommelier et découvrons qui va avec qui !</p> -->
       </div>
       <div class="conseils__item">
         <a href="#">
         <div class="conseils__images">
-            <img src="./assets/img/tomate.jpg" alt="Tomate" loading="lazy">
-            <img src="./assets/img/pates.jpg" alt="Pâtes" loading="lazy">
+            <img src="./assets/img/tomate.webp" alt="Tomate" loading="lazy">
+            <img src="./assets/img/pates.webp" alt="Pâtes" loading="lazy">
         </div>
         </a>
         <div class="conseils__text">Quelle sauce de pâtes utiliser pour mon enfant ?</div>
-        <!-- <p>Tous les enfants aiment les pâtes. On en raffole tous depuis l’enfance. Mais à chaque âge son type de pâtes.</p> -->
       </div>
     </div>
   </section>
@@ -127,21 +124,21 @@
       </div>
       <div class="engagements__item">
         <div class="barre__horizontale"></div>
-        <img src="./assets/img/ble.jpg" alt="Blé" loading="lazy">
+        <img src="./assets/img/ble.webp" alt="Blé" loading="lazy">
         <h2>FILIÈRE BLÉ RESPONSABLE FRANÇAIS</h2>
         <p>Chez Panzani, nous recherchons depuis toujours le meilleur pour vos pâtes, à commencer par la qualité du blé. Un blé de haute qualité, c’est un blé de belle couleur contenant naturellement un taux de protéines élevé pour des pâtes dorées et gourmandes. C’est aussi un blé cultivé et conservé de manière responsable par et pour des agriculteurs respectueux de l’environnement.</p>
         <a href="#">En savoir plus</a>
       </div>
       <div class="engagements__item">
         <div class="barre__horizontale"></div>
-        <img src="./assets/img/engagement_2.jpg" alt="Engagement" loading="lazy">
+        <img src="./assets/img/engagement_2.webp" alt="Engagement" loading="lazy">
         <h2>100% D'INGRÉDIENTS D'ORIGINE NATURELLE</h2>
         <p>Chez Panzani, nous pensons qu’il n’y a pas de plaisir sans qualité. C’est pourquoi nous avons à coeur de n’utiliser que des tomates répondant à des exigences strictes pour réaliser nos délicieuses sauces.</p>
         <a href="#">En savoir plus</a>
       </div>
       <div class="engagements__item">
         <div class="barre__horizontale"></div>
-        <img src="./assets/img/engagement-nutriscore.png" alt="Nutriscore" loading="lazy">
+        <img src="./assets/img/engagement-nutriscore.webp" alt="Nutriscore" loading="lazy">
         <h2>NUTRISCORE</h2>
         <p>En 2019, Panzani s’est engagé de façon volontaire à déployer le Nutri-Score sur tous ses produits.</p>
         <a href="#">En savoir plus</a>

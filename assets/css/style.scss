@@ -1,9 +1,27 @@
+@mixin small {
+  @media (min-width: 450px) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media (min-width: 850px) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media (min-width:1150px) {
+    @content;
+  }
+}
+
 @import url(reset.scss);
-@import url(header.scss);
-@import url(produits.scss);
-@import url(burger.scss);
-@import url(conseils.scss);
-@import url(engagements.scss);
+@import "./header.scss";
+@import "./produits.scss";
+@import "./burger.scss";
+@import "./conseils.scss";
+@import "./engagements.scss";
 
 @font-face {
   font-family: "creamy";
@@ -13,18 +31,6 @@
 @font-face {
   font-family: "orgon";
   src: url("./../fonts/orgon.woff2") format("woff2");
-}
-
-@mixin m {
-  @media (min-width:800px) {
-    @content;
-  }
-}
-
-@mixin xl {
-  @media (min-width:1400px) {
-    @content;
-  }
 }
 
 :root {
@@ -110,6 +116,8 @@ body {
   height: 250px;
 }
 
+/* Bouton Back To Top */
+
 #back-to-top-btn {
   z-index:3;
   display: none;
@@ -132,13 +140,13 @@ body {
 
 /* Apparition */
 
-.btnEntrance {
+.btnEntree {
   animation-duration: 0.5s;
   animation-fill-mode: both;
-  animation-name: btnEntrance;
+  animation-name: btnEntree;
 }
 
-@keyframes btnEntrance {
+@keyframes btnEntree {
   from {
     opacity: 0;
     transform: translate3d(0, 100%, 0);
@@ -151,13 +159,13 @@ body {
 
 /* Disparition */
 
-.btnExit {
+.btnSortie {
   animation-duration: 0.25s;
   animation-fill-mode: both;  
-  animation-name: btnExit;
+  animation-name: btnSortie;
 }
 
-@keyframes btnExit {
+@keyframes btnSortie {
   from {
     opacity: 1;
   }
@@ -165,8 +173,4 @@ body {
     opacity: 0;
     transform: translate3d(0, 100%, 0);
   }
-}
-
-a:first-child {
-  text-decoration: none;
 }

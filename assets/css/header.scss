@@ -9,6 +9,10 @@ h1 {
   font-family: "creamy";
   font-size: 1.5625rem;
   text-align: center;
+
+  @include medium() {
+    font-size:2rem;
+  }
 }
 
 header img {
@@ -40,5 +44,9 @@ header img {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding-bottom: 48px;
+  padding: 48px 0;
+}
+
+button p {
+  font-size:0px;
 }

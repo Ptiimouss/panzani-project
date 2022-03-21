@@ -9,14 +9,25 @@
 
 .engagements__presentation {
   padding: 100px 0 200px;
+  width: 90%;
+
+  @include medium() {
+    width:75%;
+  }
 }
 
 .engagements__presentation h2 {
   font-size : 1.25rem;
+  @include medium() {
+    font-size: 2rem;
+  }
 }
 
 .engagements__presentation span {
   font-size : 1.5625rem;
+  @include medium() {
+    font-size: 1.75rem;
+  }
 }
 
 .engagements__item {
@@ -25,6 +36,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
+  @include medium() {
+    width:75%;
+  }
 }
 
 .engagements__item h2 {
@@ -34,12 +49,21 @@
 .engagements__item img {
   width: 95%;
   height: auto;
+
+  @include small() {
+    width: 450px;
+    height: auto;
+  }
 }
 
 .engagements__item p {
   width:95%;
-  text-align: justify;
+  text-align: center;
   padding-bottom: 20px;
+
+  @include small() {
+    width:80%;
+  }
 }
 
 .engagements__item a {
