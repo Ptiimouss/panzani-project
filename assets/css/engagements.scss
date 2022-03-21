@@ -6,3 +6,48 @@
   align-items: center;
   text-align: center;
 }
+
+.engagements__presentation {
+  padding: 100px 0 200px;
+}
+
+.engagements__presentation h2 {
+  font-size : 1.25rem;
+}
+
+.engagements__presentation span {
+  font-size : 1.5625rem;
+}
+
+.engagements__item {
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.engagements__item h2 {
+  padding: 15px 0;
+}
+
+.engagements__item img {
+  width: 95%;
+  height: auto;
+}
+
+.engagements__item p {
+  width:95%;
+  text-align: justify;
+  padding-bottom: 20px;
+}
+
+.engagements__item a {
+  font-size: .75rem;
+  color:var(--blanc);
+  text-decoration: none;
+  border:solid 5px var(--vert);
+  background-color: var(--vert);
+  border-radius: 20px;
+  padding: 8px 14px;
+}

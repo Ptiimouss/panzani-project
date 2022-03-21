@@ -21,6 +21,12 @@
   }
 }
 
+@mixin xl {
+  @media (min-width:1400px) {
+    @content;
+  }
+}
+
 :root {
   --vert: #00ab2e;
   --rouge: #e6002c;
@@ -47,8 +53,8 @@ body {
 
 .barregauche__courte {
   margin: 10px 0;
-  width: 3.125rem;
-  height: .25rem;
+  width: 50px;
+  height: 4px;
   background: var(--rouge);
   border-radius: 10px;
 }
@@ -57,8 +63,8 @@ body {
   position: absolute;
   right: 5%;
   margin: 10px 0;
-  width: 3.125rem;
-  height: .25rem;
+  width: 50px;
+  height: 4px;
   background: var(--rouge);
   border-radius: 10px;
 }
@@ -67,17 +73,25 @@ body {
   position: absolute;
   right: 5%;
   margin-top: 10px;
-  width: 6.25rem;
-  height: .5rem;
+  width: 100px;
+  height: 8px;
   background: var(--rouge);
   border-radius: 10px;
 }
 
 .barregauche__longue {
   margin-top: 10px;
-  width: 6.25rem;
-  height: .5rem;
+  width: 100px;
+  height: 8px;
   background: var(--rouge);
+  border-radius: 10px;
+}
+
+.barre__horizontale {
+  margin: 10px 0;
+  width: 75px;
+  height: 8px;
+  background: var(--vert);
   border-radius: 10px;
 }
 
@@ -86,15 +100,73 @@ body {
   height:20px;
 }
 
-.coin {
-  margin-top: 10px;
-  width: 6.25rem;
-  height: .5rem;
-  background: var(--blanc);
-  border-radius: 10px;
-}
-
 .transition__gradient {
   background: linear-gradient(0deg, var(--vert), var(--blanc));
   height: 250px;
+}
+
+.transition__gradient2 {
+  background: linear-gradient(0deg, var(--blanc), var(--vert));
+  height: 250px;
+}
+
+#back-to-top-btn {
+  z-index:3;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 1.875rem;
+  width: 45px;
+  height: 45px;
+  background-color: var(--blanc);
+  color: black;
+  border: 3px solid black;
+  border-radius: 50%;
+  transition-duration: 0.5s;
+}
+#back-to-top-btn:hover, #back-to-top-btn:focus {
+  background-color: black;
+  color: var(--blanc);  
+}
+
+/* Apparition */
+
+.btnEntrance {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-name: btnEntrance;
+}
+
+@keyframes btnEntrance {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* Disparition */
+
+.btnExit {
+  animation-duration: 0.25s;
+  animation-fill-mode: both;  
+  animation-name: btnExit;
+}
+
+@keyframes btnExit {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+a:first-child {
+  text-decoration: none;
 }
